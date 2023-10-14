@@ -86,43 +86,32 @@ const Header: React.FC<HeaderProps> = (
                         <HiHome className="text-black" size={20}/>
                     </button>
                     <button
-                        className={"rounded-full" +
-                            "p-2" +
-                            "bg-white" +
-                            "flex" +
-                            "items-center" +
-                            "justify-center" +
-                            "hover:opacity-75" +
-                            "transition"}>
+                        className={"rounded-full p-2 bg-white flex items-center justify-center hover:opacity-75 transition"}>
 
                         <BiSearch className="text-black" size={20}/>
                     </button>
                 </div>
                 <div
-                className={"flex" +
-                    "justify-between" +
-                    "items-center" +
-                    "gap-x-4"}>
+                className={"flex justify-between items-center gap-x-4"}>
                     <>
                       <div>
                           <Button
-                          className={"bg-transparent" +
-                              "text-neutral-300" +
-                              "font-medium"}>
+                              onClick={() => {}}
+                              className={"bg-transparent text-neutral-300 font-medium"}>
                               Sign Up
                           </Button>
                       </div>
                         <div>
                             <Button
-                                className={"bg-white" +
-                                    "px-6" +
-                                    "py-2"}>
+                                onClick={() => {}}
+                                className={"bg-white px-6 py-2"}>
                                 Log in
                             </Button>
                         </div>
                     </>
                 </div>
             </div>
+            {children}
         </div>
     );
 }
